@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smarkets Pro Trading Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smarkets Pro Trading Toolkit</h1>
+
+  <div class="module" id="dutching">
+    <h2>Dutching Calculator</h2>
+    <input type="number" id="odd1" placeholder="Odds 1">
+    <input type="number" id="odd2" placeholder="Odds 2">
+    <input type="number" id="stake" placeholder="Total Stake">
+    <button onclick="calculateDutching()">Calculate</button>
+    <div id="dutchingResult"></div>
+  </div>
+
+  <div class="module" id="layHedge">
+    <h2>Lay Hedging</h2>
+    <input type="number" id="backOdds" placeholder="Back Odds">
+    <input type="number" id="backStake" placeholder="Back Stake">
+    <input type="number" id="layOdds" placeholder="Lay Odds">
+    <button onclick="calculateLayHedge()">Hedge</button>
+    <div id="layResult"></div>
+  </div>
+
+  <div class="module" id="commission">
+    <h2>Commission</h2>
+    <label>Commission %: <input type="number" id="commissionRate" value="2"></label>
+    <div id="commissionInfo"></div>
+  </div>
+
+  <div class="module" id="summary">
+    <h2>Profit Summary</h2>
+    <div>Total Stake: <span id="summaryStake">-</span></div>
+    <div>Total Return: <span id="summaryReturn">-</span></div>
+    <div>Total Profit: <span id="summaryProfit">-</span></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

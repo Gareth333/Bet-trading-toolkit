@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+.module {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+}
+input {
+  margin: 5px;
+}
